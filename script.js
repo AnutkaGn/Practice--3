@@ -29,10 +29,8 @@ const pow = (number, power) => {
 console.log(pow(2, 4))
 
 // Завдання 5. Функція powList
-const powList = (arr, power, handler) => {
-    const listpow = arr.map(element => handler(element, power));
-    return listpow
-}
+const powList = (arr, power, handler) => arr.map(element => handler(element, power));
+
 const arr2 = [1, 2, 3, 4]
 
 console.log(powList(arr2, 2, pow))
